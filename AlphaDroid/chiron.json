@@ -1,0 +1,28 @@
+{
+	"response": [
+		{
+			"maintainer": "Tonyha7",
+			"oem": "Xiaomi",
+			"device": "Mi Mix2",
+			"filename": "AlphaDroid-20230228-chiron-vanilla-v1.2.zip",
+			"download": "https://drive.tonyha7.com/Firmware/Xiaomi%20Mix2/AlphaDroid-20230228-chiron-vanilla-v1.2.zip",
+			"timestamp": 1677562487,
+			"md5": "091e808ff817fd513c4fd93c5cb51c34",
+			"sha256": "cdef30955ba053e5c0836ccf721eb011b923d3b04adb7fb9c60b71c8d25844a1",
+			"size": 943891610,
+			"version": "1.2",
+			"buildtype": "vanilla",
+			"forum": "",
+			"gapps": "",
+			"firmware": "",
+			"modem": "",
+			"bootloader": "",
+			"recovery": "",
+			"paypal": "",
+			"telegram": "https://t.me/whoisthz",
+			"dt": "https://github.com/th7schiron/android_device_xiaomi_chiron",
+			"common-dt": "https://github.com/th7schiron/android_device_xiaomi_msm8998-common",
+			"kernel": "https://github.com/th7schiron/android_kernel_xiaomi_msm8998"
+		}
+	]
+}

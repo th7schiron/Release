@@ -1,0 +1,17 @@
+Highlights & Device Specific Changes:
+Build type: Beta
+Device: Xiaomi Mi Mix2
+Device maintainer: Tonyha7
+
+====================
+     28-02-2023
+====================
+
+* Add crDroid Overlays
+
+====================
+     21-02-2023
+====================
+
+* Init
+
