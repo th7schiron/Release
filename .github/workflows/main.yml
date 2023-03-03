@@ -1,0 +1,33 @@
+name: Download & Upload
+
+on:
+  workflow_dispatch:
+    inputs:
+      ZIP_URL:
+        required: true
+      RELEASE_NAME:
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    permissions:
+      contents: write
+    steps:
+    - name: Download & MD5
+      run: |
+        mkdir temp
+        cd temp
+        wget ${{ github.event.inputs.ZIP_URL }}
+        md5sum *
+
+    - name: Upload
+      uses: softprops/action-gh-release@v1
+      with:
+        files: | 
+          temp/*.img
+          temp/*.zip
+        name: ${{ github.event.inputs.RELEASE_NAME }}
+        tag_name: ${{ github.run_id }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
